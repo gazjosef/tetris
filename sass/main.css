@@ -2342,6 +2342,9 @@ a:not([class]) {
   flex-wrap: wrap;
   background-color: black;
 }
+.grid--max {
+  border-right: 1px solid #000;
+}
 
 .mini-grid {
   width: 80px;
@@ -2357,6 +2360,12 @@ a:not([class]) {
   height: 20px;
   width: 20px;
   border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.score {
+  background-color: orangered;
+  height: 100px;
+  width: 100px;
 }
 
 /* Tetrominos */

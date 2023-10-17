@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   background-color: black;
   // border: 1px solid white;
+
+  &--max {
+    border-right: 1px solid #000;
+  }
 }
 
 .mini-grid {
