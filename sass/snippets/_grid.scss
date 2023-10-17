@@ -1,0 +1,25 @@
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  // border: 1px solid white;
+}
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.grid div,
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+}

@@ -2269,7 +2269,7 @@ html:focus-within {
 /* Set box-sizing & background color */
 body {
   box-sizing: border-box;
-  background-color: var(--clr-white-100);
+  background-color: dodgerblue;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -2307,6 +2307,46 @@ a:not([class]) {
     scroll-behavior: auto !important;
   }
 }
+/* Container */
+.container {
+  min-height: 90vh;
+  margin-inline: auto;
+  margin-top: 10vh;
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.grid div,
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Tetrominos */
+.tetromino {
+  background-color: blue;
+  box-shadow: inset 6px -6px 3px 0 rgba(0, 0, 0, 0.35);
+}
+
 .u-rounded {
   border-radius: 0.4rem;
 }
@@ -2361,46 +2401,6 @@ a:not([class]) {
 
 .u-max-w-max {
   max-width: max-content;
-}
-
-.u-bg-white {
-  background-color: hsl(0, 0%, 100%);
-}
-
-.u-bg-white-100 {
-  background-color: hsl(0, 0%, 90%);
-}
-
-.u-bg-primary-300 {
-  background-color: #2e8bc0;
-}
-
-.u-bg-primary-400 {
-  background-color: hsl(195, 43%, 79%);
-}
-
-.u-bg-black {
-  background-color: hsl(0, 0%, 0%);
-}
-
-.u-text-white {
-  color: hsl(0, 0%, 100%);
-}
-
-.u-text-black {
-  color: hsl(0, 0%, 0%);
-}
-
-.u-text-primary-100 {
-  color: #0c2d48;
-}
-
-.u-text-primary-200 {
-  color: #145da0;
-}
-
-.u-text-primary-300 {
-  color: #2e8bc0;
 }
 
 .u-hidden {

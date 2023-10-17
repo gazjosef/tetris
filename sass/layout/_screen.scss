@@ -1,0 +1,10 @@
+/* Container */
+.container {
+  min-height: 90vh;
+  margin-inline: auto;
+  margin-top: 10vh;
+  width: 800px;
+
+  display: flex;
+  justify-content: space-around;
+}
