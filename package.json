@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "tetris",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/gazjosef/tetris.git"
   },
-  "author": "",
+  "author": "Gareth Hind",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gazjosef/tetris/issues"
