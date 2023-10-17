@@ -1,3 +1,41 @@
+/*
+SCREEN SIZES
+
+0 - 350px:    Phone
+350 - 600px:    Phone
+600 - 900px:  Tablet Portrait
+900 - 1200px:  Tablet Landscape
+(1200 - 1800) is where our normal styles apply
+1800px+:       Big Desktop
+
+$breakpoint arguement choices:
+- sm-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+TAILWIND
+
+0 - 350px:    Phone
+350 - 600px:    Phone
+600 - 900px:  Tablet Portrait
+900 - 1200px:  Tablet Landscape
+(1200 - 1800) is where our normal styles apply
+1800px+:       Big Desktop
+
+$breakpoint arguement choices:
+- sm-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + Typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --clr-primary-100: hsl(213, 100%, 98%);
   --clr-primary-200: hsl(195, 43%, 79%);
@@ -2229,43 +2267,6 @@
   bottom: 100%rem;
 }
 
-/*
-SCREEN SIZES
-
-0 - 350px:    Phone
-350 - 600px:    Phone
-600 - 900px:  Tablet Portrait
-900 - 1200px:  Tablet Landscape
-(1200 - 1800) is where our normal styles apply
-1800px+:       Big Desktop
-
-$breakpoint arguement choices:
-- sm-phone
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-TAILWIND
-
-0 - 350px:    Phone
-350 - 600px:    Phone
-600 - 900px:  Tablet Portrait
-900 - 1200px:  Tablet Landscape
-(1200 - 1800) is where our normal styles apply
-1800px+:       Big Desktop
-
-$breakpoint arguement choices:
-- sm-phone
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-ORDER: Base + Typography > general layout + grid > page layout > components
-
-1em = 16px
-*/
 /* Box sizing rules & remove default margin/padding */
 *,
 *::after,
@@ -2286,6 +2287,7 @@ html:focus-within {
 /* Set box-sizing & background color */
 body {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   background-color: dodgerblue;
 }
 
@@ -2343,7 +2345,12 @@ a:not([class]) {
   background-color: black;
 }
 .grid--max {
-  border-right: 1px solid #000;
+  width: 200px;
+  height: 400px;
+}
+.grid--min {
+  width: 80px;
+  height: 80px;
 }
 
 .mini-grid {
@@ -2363,9 +2370,11 @@ a:not([class]) {
 }
 
 .score {
-  background-color: orangered;
+  background-color: black;
   height: 100px;
   width: 100px;
+  color: white;
+  font-size: 2rem;
 }
 
 /* Tetrominos */
