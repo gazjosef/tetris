@@ -2339,7 +2339,6 @@ a:not([class]) {
 .mini-grid {
   width: 120px;
   height: 120px;
-  margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
   background-color: black;
@@ -2356,7 +2355,7 @@ a:not([class]) {
 }
 
 .border {
-  height: 602px;
+  height: min-content;
   border: 1px solid white;
 }
 
@@ -2364,6 +2363,7 @@ a:not([class]) {
   background-color: black;
   padding: 2rem;
   height: 100px;
+  border: 1px solid white;
   display: grid;
   place-items: center;
   color: white;

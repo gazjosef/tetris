@@ -9,7 +9,7 @@
 .mini-grid {
   width: 120px;
   height: 120px;
-  margin-left: 50px;
+  // margin-left: 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +27,7 @@
 }
 
 .border {
-  height: 602px;
+  // height: 602px;
+  height: min-content;
   border: 1px solid white;
 }
