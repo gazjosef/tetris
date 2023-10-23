@@ -1,7 +1,11 @@
 .score {
   background-color: black;
+  padding: 2rem;
   height: 100px;
-  width: 100px;
+  // width: 100px;
+
+  display: grid;
+  place-items: center;
 
   color: white;
   font-size: 2rem;

@@ -2288,7 +2288,8 @@ html:focus-within {
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  background-color: dodgerblue;
+  background: #00416a; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e4e5e6, #00416a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -2337,25 +2338,24 @@ a:not([class]) {
   justify-content: space-around;
 }
 
+.btn {
+  background-color: white;
+  border-radius: 50px;
+  padding: 2rem 4rem;
+  border: none;
+}
+
 .grid {
-  width: 200px;
-  height: 400px;
+  width: 300px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
   background-color: black;
 }
-.grid--max {
-  width: 200px;
-  height: 400px;
-}
-.grid--min {
-  width: 80px;
-  height: 80px;
-}
 
 .mini-grid {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -2364,15 +2364,25 @@ a:not([class]) {
 
 .grid div,
 .mini-grid div {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
+}
+.grid div:not(.taken),
+.mini-grid div:not(.taken) {
   border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.border {
+  height: 602px;
+  border: 1px solid white;
 }
 
 .score {
   background-color: black;
+  padding: 2rem;
   height: 100px;
-  width: 100px;
+  display: grid;
+  place-items: center;
   color: white;
   font-size: 2rem;
 }
