@@ -10,15 +10,38 @@
 
   <body>
     <div class="container">
-      <div class="">
-        <div class="score">
+      <aside class="aside">
+        <div class="score border">
           <h3>Score: <span id="score">0</span></h3>
         </div>
-        <button class="btn | u-mt-10" id="start-button">Start/Pause</button>
-      </div>
+
+        <div class="score border | u-margin-top-medium">
+          <h3>Level: <span id="level">1</span></h3>
+        </div>
+        <div class="| u-margin-top-medium">
+          <div class="mini-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </aside>
 
       <!-- Grid -->
-      <div class="border">
+      <main class="border">
         <div class="grid">
           <div></div>
           <div></div>
@@ -232,31 +255,19 @@
           <div class="taken"></div>
           <div class="taken"></div>
         </div>
-      </div>
+      </main>
 
       <!-- Mini Grid -->
-      <div>
-        <div class="border">
-          <div class="mini-grid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+      <aside class="aside aside--start">
+        <div>
+          <img src="./assets/logo/The_Tetris_Company_logo.png" alt="" />
         </div>
-      </div>
+        <div class="">
+          <button class="btn | u-margin-top-medium" id="start-button">
+            Start/Pause
+          </button>
+        </div>
+      </aside>
     </div>
   </body>
 </html>

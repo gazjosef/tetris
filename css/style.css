@@ -2311,6 +2311,12 @@ a:not([class]) {
     scroll-behavior: auto !important;
   }
 }
+.aside--start img {
+  width: 15rem;
+  height: auto;
+  margin-inline: auto;
+}
+
 /* Container */
 .container {
   min-height: 90vh;
@@ -2337,11 +2343,21 @@ a:not([class]) {
 }
 
 .mini-grid {
+  background-color: black;
   width: 120px;
   height: 120px;
+  margin-inline: auto;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
+  position: relative;
+}
+.mini-grid::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid white;
 }
 
 .grid div,
@@ -2361,9 +2377,7 @@ a:not([class]) {
 
 .score {
   background-color: black;
-  padding: 2rem;
-  height: 100px;
-  border: 1px solid white;
+  padding: 1rem 2rem;
   display: grid;
   place-items: center;
   color: white;
@@ -2374,62 +2388,6 @@ a:not([class]) {
 .tetromino {
   background-color: blue;
   box-shadow: inset 6px -6px 3px 0 rgba(0, 0, 0, 0.35);
-}
-
-.u-rounded {
-  border-radius: 0.4rem;
-}
-
-.u-border-dotted {
-  border-style: dotted;
-}
-
-.u-border {
-  border-width: 1px;
-}
-
-.u-border-2 {
-  border-width: 2px;
-}
-
-.u-border-4 {
-  border-width: 4px;
-}
-
-.u-border-8 {
-  border-width: 8px;
-}
-
-.u-shadow {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-}
-
-.u-h-16 {
-  height: 16rem;
-}
-
-.u-h-200 {
-  height: 20rem;
-}
-
-.u-h-full {
-  height: 100%;
-}
-
-.u-h-min {
-  height: min-content;
-}
-
-.u-min-h-min {
-  min-height: min-content;
-}
-
-.u-max-w-min {
-  max-width: min-content;
-}
-
-.u-max-w-max {
-  max-width: max-content;
 }
 
 .u-hidden {
