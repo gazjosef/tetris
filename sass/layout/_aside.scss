@@ -1,4 +1,13 @@
 .aside {
+  &--score,
+  &--start {
+    --aside-gap: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--aside-gap);
+  }
+
   &--start {
     img {
       width: 15rem;
