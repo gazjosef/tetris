@@ -1,9 +1,9 @@
 .score {
+  --padding-top-bottom: 1rem;
+  --padding-left-right: 2rem;
   background-color: black;
-  padding: 1rem 2rem;
-  // height: 100px;
-  // width: 100px;
-  // border: 1px solid white;
+  padding: var(--padding-top-bottom) var(--padding-left-right);
+  border: 1px solid white;
 
   display: grid;
   place-items: center;

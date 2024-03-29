@@ -2318,6 +2318,7 @@ a:not([class]) {
   height: min-content;
   padding: var(--pading-top-bottom) var(--pading-left-right);
   background-color: #333;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2388,8 +2389,11 @@ a:not([class]) {
 }
 
 .score {
+  --padding-top-bottom: 1rem;
+  --padding-left-right: 2rem;
   background-color: black;
-  padding: 1rem 2rem;
+  padding: var(--padding-top-bottom) var(--padding-left-right);
+  border: 1px solid white;
   display: grid;
   place-items: center;
   color: white;
