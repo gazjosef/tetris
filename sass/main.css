@@ -2328,8 +2328,14 @@ a:not([class]) {
     scroll-behavior: auto !important;
   }
 }
-.aside--score, .aside--start {
-  --aside-gap: 8rem;
+.aside {
+  --pading-top-bottom: 5rem;
+  --pading-left-right: 2rem;
+  --aside-gap: 4rem;
+  height: -moz-min-content;
+  height: min-content;
+  padding: var(--pading-top-bottom) var(--pading-left-right);
+  background-color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
