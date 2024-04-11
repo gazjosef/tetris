@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/gazjosef/tetris">
-    <img src="assets/logo/The_Tetris_Company_logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/logo/The_Tetris_Company_logo.png" alt="Logo" width="244" height="80">
   </a>
 
 <h3 align="center">Tetris Game</h3>
