@@ -1,9 +1,12 @@
 /* Container */
 .container {
-  min-height: 90vh;
   margin-inline: auto;
   margin-top: 10vh;
   width: 800px;
+  border: 1px solid white;
+  background-color: #808080;
+  border-radius: 0.5rem;
+  padding: 2rem;
 
   display: flex;
   justify-content: space-around;
