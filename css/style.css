@@ -2334,7 +2334,7 @@ a:not([class]) {
   margin-top: 10vh;
   width: 800px;
   border: 1px solid white;
-  background-color: #808080;
+  background-color: lightsteelblue;
   border-radius: 0.5rem;
   padding: 2rem;
   display: flex;
