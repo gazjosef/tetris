@@ -2272,8 +2272,6 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   background: #00416a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e4e5e6, #00416a); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e4e5e6, #00416a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -2333,8 +2331,6 @@ a:not([class]) {
   margin-inline: auto;
   margin-top: 10vh;
   width: 800px;
-  border: 1px solid white;
-  background-color: lightsteelblue;
   border-radius: 0.5rem;
   padding: 2rem;
   display: flex;
