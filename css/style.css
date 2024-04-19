@@ -2339,9 +2339,8 @@ a:not([class]) {
 
 .btn {
   background-color: white;
-  border-radius: 5px;
   padding: 2rem 4rem;
-  border: none;
+  border-radius: 5px;
   font-family: "Montserrat", sans-serif;
 }
 
