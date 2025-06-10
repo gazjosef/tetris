@@ -1,13 +1,14 @@
 .score {
-  --padding-top-bottom: 1rem;
-  --padding-left-right: 2rem;
+  --padding-top-bottom: 0.8rem;
+  --padding-left-right: 0rem;
   background-color: black;
   padding: var(--padding-top-bottom) var(--padding-left-right);
   border: 1px solid white;
+  width: 12rem;
 
   display: grid;
   place-items: center;
 
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
